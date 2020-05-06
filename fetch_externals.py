@@ -92,6 +92,7 @@ externals = [
     Git(os.path.join(basedir, 'core_software/core_driver'), 'ssh://review.mlplatform.org:29418/ml/ethos-u/ethos-u-core-driver', revision='master'),
     Git(os.path.join(basedir, 'core_software/cmsis'), 'https://github.com/ARM-software/CMSIS_5.git', revision='master'),
     Git(os.path.join(basedir, 'core_software/tensorflow'), 'https://github.com/tensorflow/tensorflow', revision='master'),
+    Git(os.path.join(basedir, 'vela'), 'ssh://review.mlplatform.org:29418/ml/ethos-u/ethos-u-vela', revision='master')
 ]
 
 for external in externals:
