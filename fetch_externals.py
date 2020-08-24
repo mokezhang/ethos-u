@@ -92,6 +92,7 @@ externals = [
     Git(os.path.join(basedir, 'core_software/core_driver'), "https://review.mlplatform.org/ml/ethos-u/ethos-u-core-driver", pushurl='ssh://review.mlplatform.org:29418/ml/ethos-u/ethos-u-core-driver', revision='master'),
     Git(os.path.join(basedir, 'core_software/cmsis'), 'https://github.com/ARM-software/CMSIS_5.git', revision='master'),
     Git(os.path.join(basedir, 'core_software/tensorflow'), 'https://github.com/tensorflow/tensorflow', revision='master'),
+    Git(os.path.join(basedir, 'linux_driver_stack'), "https://review.mlplatform.org/ml/ethos-u/ethos-u-linux-driver-stack", pushurl='ssh://review.mlplatform.org:29418/ml/ethos-u/ethos-u-linux-driver-stack', revision='master'),
     Git(os.path.join(basedir, 'vela'), "https://review.mlplatform.org/ml/ethos-u/ethos-u-vela", pushurl='ssh://review.mlplatform.org:29418/ml/ethos-u/ethos-u-vela', revision='master')
 ]
 
