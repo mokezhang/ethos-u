@@ -3,11 +3,25 @@
 This is the root repository for all Arm Ethos-U software. It is provided to help
 users download required repositories and place them in a tree structure.
 
+## Fetching externals
+
+The externals can be downloaded with a Python script. The default configuration
+is stored in `externals.json` which is a human readable JSON file.
+
 ```
 $ ./fetch_externals.py fetch
 ```
 
-The script will build following tree structure.
+The default configuration can be overriddend with the `-c` argument, for
+example.
+
+```
+$ ./fetch_externals.py -c 20.08.json fetch
+```
+
+## Directory structure
+
+The script will build following directory structure.
 
 ```
 Directory
