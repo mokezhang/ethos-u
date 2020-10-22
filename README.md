@@ -43,3 +43,41 @@ Directory
 | [tensorflow](https://github.com/tensorflow/tensorflow) | The TensorFlow Lite microcontroller framework is used to run inferences. |
 | [linux_driver_stack](https://review.mlplatform.org/plugins/gitiles/ml/ethos-u/ethos-u-linux-driver-stack) | Example driver stack showing how Linux can dispatch inferences to an Arm Ethos-U subsystem. |
 | [vela](https://review.mlplatform.org/plugins/gitiles/ml/ethos-u/ethos-u-vela) | The Vela optimizer takes a TFLu file as input and replaces operators that are supported by the Arm Ethos-U NPU with custom operators designed to run on the NPU. Operators not supported by the NPU are executed in software. |
+
+# License
+
+The Arm Ethos-U is provided under an Apache-2.0 license. Please see
+[LICENSE.txt](LICENSE.txt) for more information.
+
+# Contributions
+
+The Arm Ethos-U project welcomes contributions under the Apache-2.0 license.
+
+Before we can accept your contribution, you need to certify its origin and give
+us your permission. For this process we use the Developer Certificate of Origin
+(DCO) V1.1 (https://developercertificate.org).
+
+To indicate that you agree to the terms of the DCO, you "sign off" your
+contribution by adding a line with your name and e-mail address to every git
+commit message. You must use your real name, no pseudonyms or anonymous
+contributions are accepted. If there are more than one contributor, everyone
+adds their name and e-mail to the commit message.
+
+```
+Author: John Doe \<john.doe@example.org\>
+Date:   Mon Feb 29 12:12:12 2016 +0000
+
+Title of the commit
+
+Short description of the change.
+   
+Signed-off-by: John Doe john.doe@example.org
+Signed-off-by: Foo Bar foo.bar@example.org
+```
+
+The contributions will be code reviewed by Arm before they can be accepted into
+the repository.
+
+## Security
+
+Please see [Security](SECURITY.md).
