@@ -16,7 +16,7 @@
         {
             "path": "core_software/cmsis",
             "fetchurl": "https://github.com/ARM-software/CMSIS_5.git",
-            "revision": "master"
+            "revision": "develop"
         },
         {
             "path": "core_software/tensorflow",
