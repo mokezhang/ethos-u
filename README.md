@@ -26,6 +26,7 @@ The script will build following directory structure.
 ```
 Directory
 .
++-- core_platform
 +-- core_software
 |   +-- core_driver
 |   +-- cmsis
@@ -37,6 +38,7 @@ Directory
 | Directory | Description |
 --- | ---
 | [.](https://review.mlplatform.org/plugins/gitiles/ml/ethos-u/ethos-u) | This is the root directory for all Arm Ethos-U software. |
+| [core_platform](https://review.mlplatform.org/plugins/gitiles/ml/ethos-u/ethos-u-core-platform) | This directory contains target specific files and is provided as an example how core software can be built for target platforms. |
 | [core_software](https://review.mlplatform.org/plugins/gitiles/ml/ethos-u/ethos-u-core-software) | The software executing on Arm Cortex-M is referred to as _Core Software_. This folder provides a small build system that illustrates how to build the key components for the Arm Ethos-U core software. |
 | [core_driver](https://review.mlplatform.org/plugins/gitiles/ml/ethos-u/ethos-u-core-driver) | The Arm Ethos-U NPU driver. |
 | [cmsis](https://github.com/ARM-software/CMSIS_5) | CMSIS provides optimized kernels and generic interfaces to the Arm Cortex-M CPUs. |

@@ -2,6 +2,12 @@
     "externals":
     [
         {
+            "path": "core_platform",
+            "fetchurl": "https://review.mlplatform.org/ml/ethos-u/ethos-u-core-platform",
+            "pushurl": "ssh://review.mlplatform.org:29418/ml/ethos-u/ethos-u-core-platform",
+            "revision": "master"
+        },
+        {
             "path": "core_software",
             "fetchurl": "https://review.mlplatform.org/ml/ethos-u/ethos-u-core-software",
             "pushurl": "ssh://review.mlplatform.org:29418/ml/ethos-u/ethos-u-core-software",
