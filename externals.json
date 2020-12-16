@@ -32,7 +32,7 @@
         {
             "path": "core_software/rtos/freertos/freertos_kernel",
             "fetchurl": "https://github.com/FreeRTOS/FreeRTOS-Kernel.git",
-            "revision": "master"
+            "revision": "main"
         },
         {
             "path": "core_software/tensorflow",
