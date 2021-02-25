@@ -1,7 +1,7 @@
-# Ethos-u
+# Arm(R) Ethos(TM)-U
 
-This is the root repository for all Arm Ethos-U software. It is provided to help
-users download required repositories and place them in a tree structure.
+This is the root repository for all Arm(R) Ethos(TM)-U software. It is provided
+to help users download required repositories and place them in a tree structure.
 
 ## Fetching externals
 
@@ -16,7 +16,7 @@ The default configuration can be overriddend with the `-c` argument, for
 example.
 
 ```
-$ ./fetch_externals.py -c 20.11.json fetch
+$ ./fetch_externals.py -c 21.02.json fetch
 ```
 
 ## Directory structure
@@ -28,8 +28,11 @@ Directory
 .
 +-- core_platform
 +-- core_software
-|   +-- core_driver
+|   +-- applications
 |   +-- cmsis
+|   +-- core_driver
+|   +-- drivers
+|   +-- rtos
 |   +-- tensorflow
 +-- linux_driver_stack
 +-- vela
@@ -80,6 +83,11 @@ Signed-off-by: Foo Bar foo.bar@example.org
 The contributions will be code reviewed by Arm before they can be accepted into
 the repository.
 
-## Security
+# Security
 
 Please see [Security](SECURITY.md).
+
+# Trademark notice
+
+Arm, Cortex and Ethos are registered trademarks of Arm Limited (or its
+subsidiaries) in the US and/or elsewhere.
