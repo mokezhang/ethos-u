@@ -40,9 +40,9 @@
             "revision": "main"
         },
         {
-            "path": "core_software/tensorflow",
-            "fetchurl": "https://github.com/tensorflow/tensorflow",
-            "revision": "master"
+            "path": "core_software/tflite_micro",
+            "fetchurl": "https://github.com/tensorflow/tflite-micro",
+            "revision": "main"
         },
         {
             "path": "linux_driver_stack",
