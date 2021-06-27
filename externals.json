@@ -37,7 +37,12 @@
         {
             "path": "core_software/rtos/freertos/freertos_kernel",
             "fetchurl": "https://github.com/FreeRTOS/FreeRTOS-Kernel.git",
-            "revision": "main"
+            "revision": "main" 
+        },
+        {
+            "path": "core_software/rtos/threadx",
+            "fetchurl": "https://github.com/azure-rtos/threadx",
+            "revision": "master"
         },
         {
             "path": "core_software/tflite_micro",
