@@ -16,7 +16,7 @@ The default configuration can be overriddend with the `-c` argument, for
 example.
 
 ```
-$ ./fetch_externals.py -c 21.08.json fetch
+$ ./fetch_externals.py -c 21.11.json fetch
 ```
 
 ## Directory structure
