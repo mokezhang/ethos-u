@@ -41,8 +41,9 @@
         },
         {
             "path": "core_software/rtos/threadx",
-            "fetchurl": "https://github.com/azure-rtos/threadx",
-            "revision": "master"
+            "name": "linaro",
+            "fetchurl": "https://github.com/Linaro/threadx",
+            "revision": "mps3_an547"
         },
         {
             "path": "core_software/tflite_micro",
