@@ -115,7 +115,7 @@ class Git(object):
 
     def __get_remotes(self):
         remotes = {}
-        for remote in check_output(['git', 'remote'], cwd=self.absolutepath).decode('utf-8').strip().split('\n'):
+        for remote in check_output(['git', 'remote'], cwd=self.absolutepath).decode('utf-8').splitlines():
             fetch = check_output(['git', 'remote', 'get-url', remote], cwd=self.absolutepath).decode('utf-8').strip()
             push = check_output(['git', 'remote', 'get-url', '--push', remote], cwd=self.absolutepath).decode('utf-8').strip()
             remotes[remote] = { 'fetch': fetch, 'push': push }
