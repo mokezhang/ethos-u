@@ -12,11 +12,11 @@ is stored in `externals.json` which is a human readable JSON file.
 $ ./fetch_externals.py fetch
 ```
 
-The default configuration can be overriddend with the `-c` argument, for
+The default configuration can be overridden with the `-c` argument, for
 example.
 
 ```
-$ ./fetch_externals.py -c 21.11.json fetch
+$ ./fetch_externals.py -c 22.08.json fetch
 ```
 
 ## Directory structure
