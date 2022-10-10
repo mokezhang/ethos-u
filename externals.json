@@ -25,6 +25,11 @@
             "revision": "develop"
         },
         {
+            "path": "core_software/cmsis-nn",
+            "fetchurl": "https://github.com/ARM-software/CMSIS-NN.git",
+            "revision": "main"
+        },
+        {
             "path": "core_software/cmsis-view",
             "fetchurl": "https://github.com/ARM-software/CMSIS-View.git",
             "revision": "main"
