@@ -30,6 +30,7 @@ Directory
 +-- core_software
 |   +-- applications
 |   +-- cmsis
+|   +-- cmsis-nn
 |   +-- cmsis-view
 |   +-- core_driver
 |   +-- drivers
@@ -46,7 +47,8 @@ Directory
 | [core_platform](https://git.mlplatform.org/ml/ethos-u/ethos-u-core-platform.git) | This directory contains target specific files and is provided as an example how core software can be built for target platforms. |
 | [core_software](https://git.mlplatform.org/ml/ethos-u/ethos-u-core-software.git) | The software executing on Arm Cortex-M is referred to as _Core Software_. This folder provides a small build system that illustrates how to build the key components for the Arm Ethos-U core software. |
 | [core_driver](https://git.mlplatform.org/ml/ethos-u/ethos-u-core-driver.git) | The Arm Ethos-U NPU driver. |
-| [cmsis](https://github.com/ARM-software/CMSIS_5) | CMSIS provides optimized kernels and generic interfaces to the Arm Cortex-M CPUs. |
+| [cmsis](https://github.com/ARM-software/CMSIS_5) | CMSIS provides generic interfaces to boot and configure the Arm Cortex-M CPUs. |
+| [cmsis-nn](https://github.com/ARM-software/CMSIS-NN.git) | CMSIS-NN provides optimized neural network kernels for Arm Cortex-M CPUs. |
 | [tflite_micro](https://github.com/tensorflow/tflite-micro) | The TensorFlow Lite microcontroller framework is used to run inferences. |
 | [linux_driver_stack](https://git.mlplatform.org/ml/ethos-u/ethos-u-linux-driver-stack.git) | Example driver stack showing how Linux can dispatch inferences to an Arm Ethos-U subsystem. |
 | [vela](https://git.mlplatform.org/ml/ethos-u/ethos-u-vela.git) | The Vela optimizer takes a TFLu file as input and replaces operators that are supported by the Arm Ethos-U NPU with custom operators designed to run on the NPU. Operators not supported by the NPU are executed in software. |
@@ -77,7 +79,7 @@ Date:   Mon Feb 29 12:12:12 2016 +0000
 Title of the commit
 
 Short description of the change.
-   
+
 Signed-off-by: John Doe john.doe@example.org
 Signed-off-by: Foo Bar foo.bar@example.org
 ```
