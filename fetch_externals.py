@@ -45,7 +45,7 @@ def check_output(args, **kwargs):
 ###############################################################################
 
 class Git(object):
-    def __init__(self, pwd, path, name, fetchurl, pushurl=None, revision='origin/master'):
+    def __init__(self, pwd, path, name, fetchurl, pushurl=None, revision='master'):
         self.pwd = pwd
         self.path = path
         self.name = name
@@ -57,8 +57,8 @@ class Git(object):
     def checkout_and_update(self):
         self.init()
         self.remote_add(self.name, self.revision, self.fetchurl, self.pushurl)
-        self.fetch(self.name)
-        self.checkout(self.name, self.revision)
+        self.fetch(self.name, self.revision)
+        self.checkout(self.name, 'FETCH_HEAD')
 
     def init(self):
         if not os.path.exists(self.absolutepath):
@@ -82,8 +82,8 @@ class Git(object):
             if pushurl:
                 check_output(['git', 'remote', 'set-url', '--add', '--push', name, pushurl], cwd=self.absolutepath)
 
-    def fetch(self, name):
-        check_output(['git', 'fetch', name], cwd=self.absolutepath)
+    def fetch(self, name, revision):
+        check_output(['git', 'fetch', name, revision], cwd=self.absolutepath)
 
     def checkout(self, name, revision):
         rev = self.__get_rev(name, revision)
