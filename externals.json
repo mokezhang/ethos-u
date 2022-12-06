@@ -65,7 +65,7 @@
             "path": "vela",
             "fetchurl": "https://review.mlplatform.org/ml/ethos-u/ethos-u-vela",
             "pushurl": "ssh://review.mlplatform.org:29418/ml/ethos-u/ethos-u-vela",
-            "revision": "master"
+            "revision": "main"
         }
     ]
 }
