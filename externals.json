@@ -35,6 +35,16 @@
             "revision": "main"
         },
         {
+            "path": "core_software/openamp/libmetal",
+            "fetchurl": "https://github.com/OpenAMP/libmetal",
+            "revision": "main"
+        },
+        {
+            "path": "core_software/openamp/openamp",
+            "fetchurl": "https://github.com/OpenAMP/open-amp",
+            "revision": "main"
+        },
+        {
             "path": "core_software/rtos/freertos",
             "fetchurl": "https://github.com/aws/amazon-freertos.git",
             "revision": "main"
