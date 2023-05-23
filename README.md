@@ -104,6 +104,27 @@ Without these patches there may be output diffs between TFL and TFLM for certain
 
 There's a discrepancy in tensorflow/lite/micro/cortex_m_corstone_300/README.md fixed by https://github.com/tensorflow/tflite-micro/pull/1972.
 
+# Known Issues
+
+## TensorFlow Lite for Microcontrollers Out of Memory Error during Runtime
+During runtime the TensorFlow Lite for Microcontrollers framework might report
+the following fatal error:  
+`Failed to resize buffer. Requested: X, available: Y, missing: Z`, where X, Y
+and Z are numbers of bytes and X = Y + Z.  
+There can be several reasons for running out of memory during an inference but
+one cause is that too much memory was allocated to the Ethos-U during the
+offline compilation phase of the `.tflite` file using Vela. This can result in
+not enough memory being available at runtime for the other software components
+e.g. the application, the framework, or the reference kernels. The solution is
+to calculate the amount of memory required at runtime by all components and then
+update the amount allocated to the Ethos-U by using either the Vela CLI option
+`--arena-cache-size` or the `arena_cache_size` attribute in Vela's `.ini`
+configuration file. This calculation can be difficult to get right and so a
+pragmatic solution would be to start by reducing the amount allocated to the
+Ethos-U by the value ‘Z’ (from the error message) rounded up to the nearest
+multiple 16 (the default tensor alignment used in Vela). This may be an
+iterative process.
+
 # Trademark notice
 
 Arm, Cortex and Ethos are registered trademarks of Arm Limited (or its
