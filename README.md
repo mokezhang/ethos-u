@@ -108,9 +108,12 @@ There's a discrepancy in tensorflow/lite/micro/cortex_m_corstone_300/README.md f
 
 ## TensorFlow Lite for Microcontrollers Out of Memory Error during Runtime
 During runtime the TensorFlow Lite for Microcontrollers framework might report
-the following fatal error:  
-`Failed to resize buffer. Requested: X, available: Y, missing: Z`, where X, Y
-and Z are numbers of bytes and X = Y + Z.  
+the following fatal error:
+
+```Failed to resize buffer. Requested: X, available: Y, missing: Z```
+
+where X, Y and Z are numbers of bytes and X = Y + Z.
+
 There can be several reasons for running out of memory during an inference but
 one cause is that too much memory was allocated to the Ethos-U during the
 offline compilation phase of the `.tflite` file using Vela. This can result in
