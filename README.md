@@ -93,6 +93,15 @@ Please see [Security](SECURITY.md).
 
 # Releases
 
+## Release 23.08
+
+The 23.08 release has been tested against Tensorflow version 2.12 as reference, with the additional patches applied:
+
+* https://github.com/tensorflow/tensorflow/pull/58400
+* https://github.com/tensorflow/tensorflow/pull/52014
+
+Without these patches there may be output diffs between TFL and TFLM for certain models.
+
 ## Release 23.05
 
 The 23.05 release has been tested against Tensorflow version 2.11 as reference, with the additional patches applied:
