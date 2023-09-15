@@ -45,14 +45,9 @@
             "revision": "v2023.04.0"
         },
         {
-            "path": "core_software/rtos/freertos",
-            "fetchurl": "https://github.com/aws/amazon-freertos.git",
-            "revision": "41244b002675843d44fc79c8752a87c344eaa855"
-        },
-        {
             "path": "core_software/rtos/freertos/freertos_kernel",
             "fetchurl": "https://github.com/FreeRTOS/FreeRTOS-Kernel.git",
-            "revision": "a07f649bd50798cf7bd20325f12491c599a8bd39"
+            "revision": "V10.6.1"
         },
         {
             "path": "core_software/rtos/threadx",
@@ -63,7 +58,7 @@
         {
             "path": "core_software/tflite_micro",
             "fetchurl": "https://github.com/tensorflow/tflite-micro",
-            "revision": "384dd272f28ea7a99f5f7c211c9791f73cdb301b"
+            "revision": "80cb11b131e9738dc60b2db3e2f1f8e2425ded52"
         },
         {
             "path": "linux_driver_stack",
