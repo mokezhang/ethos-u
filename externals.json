@@ -58,7 +58,7 @@
         {
             "path": "core_software/tflite_micro",
             "fetchurl": "https://github.com/tensorflow/tflite-micro",
-            "revision": "80cb11b131e9738dc60b2db3e2f1f8e2425ded52"
+            "revision": "main"
         },
         {
             "path": "linux_driver_stack",
