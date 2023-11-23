@@ -93,6 +93,15 @@ Please see [Security](SECURITY.md).
 
 # Releases
 
+## Release 23.11
+
+The 23.11 release has been tested on Ubuntu 22.04.3 LTS using Tensorflow version 2.14 as reference, with the
+additional patch applied:
+
+* https://github.com/tensorflow/tensorflow/pull/58400
+
+Without this patch there may be output diffs between TFL and TFLM for certain models.
+
 ## Release 23.08
 
 The 23.08 release has been tested against Tensorflow version 2.12 as reference, with the additional patches applied:
