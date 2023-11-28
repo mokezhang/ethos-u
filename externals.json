@@ -37,12 +37,12 @@
         {
             "path": "core_software/openamp/libmetal",
             "fetchurl": "https://github.com/OpenAMP/libmetal",
-            "revision": "v2023.04.0"
+            "revision": "8041e1c2764812a8d6feded09e68d87bc7812b3e"
         },
         {
             "path": "core_software/openamp/openamp",
             "fetchurl": "https://github.com/OpenAMP/open-amp",
-            "revision": "v2023.04.0"
+            "revision": "v2023.10.0"
         },
         {
             "path": "core_software/rtos/freertos/freertos_kernel",
